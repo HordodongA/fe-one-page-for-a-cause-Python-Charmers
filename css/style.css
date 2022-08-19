@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: 0;
+  -moz-user-select: 0;
+  -ms-user-select: 0;
+  user-select: none;
+}
+
+body {
+  font-family: Inter-Regular;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  color: var(--Color5);
+  --Color1: #285e49;
+  --Color2: #5e8166;
+  --Color3: #9ba980;
+  --Color4: #cfcfad;
+  --Color5: #e0e2c4;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--Color2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--Color4);
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#MainImage-01 {
+  background: url("../img/Rendelo_01.jfif");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#MainImage-02 {
+  background: url("../img/Rendelo_02.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#MainImage-03 {
+  background: url("../img/Rendelo_13.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#MainImage-04 {
+  background: url("../img/Rendelo_03.jfif");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#MainPage {
+  background-color: yellow;
+  background: url("../img/vet.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#MainPage div {
+  padding-top: 2%;
+  height: 65%;
+}
+
+#MainPage div h1 {
+  width: 50%;
+  text-align: left;
+  font-size: 5em;
+  font-family: Inter-Bold;
+  font-weight: 1000;
+  padding-left: 3%;
+  padding-top: 6%;
+  color: rgb(39, 39, 39);
+  -webkit-text-stroke: 0spx rgba(89, 89, 89, 0.839);
+  text-shadow: 0px 0px 5px white;
+}
+
+#MainPage div div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+}
+
+#MainPage div div div {
+  margin-left: 1%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 30%;
+  gap: 3%;
+  padding-left: 2%;
+}
+
+#MainPage div div div div {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.nav-list {
+  background-color: var(--Color1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  margin-inline: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  min-width: 220px;
+  border-left: 1px solid var(--Color5);
+}
+
+.nav-item:first-child {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.4em;
+  align-items: center;
+  gap: 3%;
+  margin-right: auto;
+  margin-left: 2%;
+  border-left: none;
+}
+
+.nav-item a {
+  display: block;
+  color: var(--Color5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10%;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: var(--Color5);
+  color: #0f5b41;
+}
+
+#SecondPage {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+}
+
+#Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+}
+
+
+#Employees {
+  background-image: url(../img/test.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: var(--Color5);
+}
+
+#Employees > div {
+  padding-top: 5%;
+  height: 90%;
+  display: flex;
+  gap: 5%;
+}
+
+#EmployeesText {
+  padding-left: 2%;
+  color: var(--Color1);
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  font-size: 1.3em;
+}
+
+#EmployeesText > :last-child {
+  text-align: right;
+}
+
+#EmployeesImages {
+  width: 100%;
+  color: var(--Color1);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+#EmployeesImages h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.65em;
+  margin-bottom: 1.5%;
+}
+
+#AllProfile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+}
+
+.TwoProfile {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+}
+
+.EmployeeProfile {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.EmployeeProfile img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.EmployeeProfile p {
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.EmployeeProfile span {
+  font-weight: bold;
+}
+
+#EmployeesTextIllustration {
+  width: 50%;
+  height: 40%;
+  margin: auto;
+  object-fit: cover;
+}
+
+
+#Services {
+  height: 100%;
+  width: 100%;
+  background-color: var(--Color5);
+  background-image: url(../img/test.jpg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--Color1);
+}
+
+.page_A {
+  height: 80%;
+  width: 100%;
+
+  padding-top: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page_A h1 {
+  font-size: 2em;
+  font-family: Inter-Bold;
+}
+
+.collector {
+  height: 90%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.A_card {
+  height: 60%;
+  width: 15%;
+  background-color: var(--Color4);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+
+  padding: 2%;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.A_card h2 {
+  font-family: Inter-Bold;
+  font-size: 1.8em;
+
+  padding-bottom: 10%;
+}
+
+.A_card_list {
+  list-style-type: none;
+  font-size: 1.2em;
+
+  padding-top: 7%;
+}
+
+.A_card_list li {
+  padding: 2%;
+}
+
+.page_B {
+  border-top: 10px solid var(--Color1);
+  border-bottom: 10px solid var(--Color1);
+  height: 20%;
+  width: 100%;
+  background-color: var(--Color1);
+  display: flex;
+  flex-direction: row;
+}
+
+.page_B div {
+  height: 100%;
+  width: 14.285%;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.B_pic1 {
+  background: url("../img/Szolg_kutya.jpeg");
+}
+.B_pic2 {
+  background: url("../img/Szolg_macska.jpg");
+}
+.B_pic3 {
+  background: url("../img/Szolg_nyul.jpg");
+}
+.B_pic4 {
+  background: url("../img/Szolg_goreny.jpg");
+}
+.B_pic5 {
+  background: url("../img/Szolg_galamb.jpg");
+}
+.B_pic6 {
+  background: url("../img/Szolg_kameleon.jpeg");
+}
+.B_pic7 {
+  background: url("../img/Szolg_tengerimalac.jpg");
+}
+
+
+#Gallery {
+  background-image: url(../img/test.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: var(--Color5);
+}
+
+#GalleryContent {
+  padding-top: 5%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#GalleryContent h1 {
+  font-family: Inter-Bold;
+  color: var(--Color1);
+  text-align: center;
+  font-size: 2em;
+}
+
+.GalleryRow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.GalleryColumn {
+  height: 100%;
+  max-width: 18.5%;
+  padding: 0 4px;
+}
+
+.GalleryColumn img {
+  width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+#Contact {
+  color: var(--Color1);
+  background-image: url(../img/test.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 3vh;
+}
+
+#Contact h1 {
+  text-align: center;
+  padding-top: 5vh;
+  font-weight: bold;
+}
+
+#ContactDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+#ContactDiv div p {
+  line-height: 55px;
+  font-size: 1.3em;
+  width: 50vh;
+}
+#frameID {
+  padding-right: 5vh;
+}
+
+a {
+  color: rgba(124, 7, 179, 0.808);
+  text-decoration-line: underline;
+}
+
+
+#Footer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 6%;
+  background-color: var(--Color1);
+}
+
+#FooterContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url("../fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url("../fonts/Inter-Regular.ttf");
+}
